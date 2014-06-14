@@ -12,8 +12,8 @@ $facebook = new Facebook($config);
 	//ログイン済みの場合はユーザー情報を取得
 	if ($facebook->getUser()) {
 		try {
-			$userId = "<pre>".$facebook->getUser()."</pre>";
-			$user = "<pre>".$facebook->api('/me','GET')."</pre>";
+			$userId = $facebook->getUser();
+			$user = $facebook->api('/me','GET');
 		} catch(FacebookApiException $e) {
 			error_log($e->getType());
 			error_log($e->getMessage());
