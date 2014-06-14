@@ -8,7 +8,7 @@ phpは動いているのか
 		'secret' => '349bbad20cf514f2f0c1a4df69d17be4'
 	);
 	var_dump($appdata);
-	$facebook _ new Facebook($appdata);
+	$facebook = new Facebook($appdata);
 
 	var_dump($appdata);
 	$loginUrl = $facebook->getLoginUrl();
