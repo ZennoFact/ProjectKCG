@@ -4,9 +4,9 @@ $config = array(
 	'appId'  => '591353344312115',
 	'secret' => '349bbad20cf514f2f0c1a4df69d17be4'
 );
-
+var_dump($config);
 $redirect_uri = 'http://zeglass.cloudapp.net/php/'; 
-
+var_dump($redirect_uri);
 $facebook = new Facebook($config);
  
 	//ログイン済みの場合はユーザー情報を取得
