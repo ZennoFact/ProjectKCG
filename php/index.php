@@ -4,6 +4,7 @@ session_start();
 <html>
 <body>
 <?php
+require_once('php-sdk/facebook.php');
 $client_secret = '349bbad20cf514f2f0c1a4df69d17be4'; 
 $redirect_uri = 'http://zeglass.cloudapp.net/php/'; 
 
