@@ -13,8 +13,19 @@ body{
 
 .inner #login{
 	height: 100%;
+<<<<<<< HEAD
+
+	background-image: url(../images/logo_2.gif);
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
 	background: url(../images/logo_3.gif) no-repeat center;
 	background-size: 200px 200px;
+
+=======
+	background: url(../images/logo_3.gif) no-repeat center;
+	background-size: 200px 200px;
+>>>>>>> FETCH_HEAD
 }
 
 .inner #login ul{
@@ -22,6 +33,7 @@ body{
 	list-style-type: none;
 	padding: 20px 0;
 	text-align: center;
+	
 }
 
 .inner #login ul li{
