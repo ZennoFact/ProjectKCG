@@ -1,4 +1,5 @@
 <?php
+var_dump("ちくしょう");
 require_once('facebook/facebook.php');
 $config = array(
         'appId'  => '591353344312115',
