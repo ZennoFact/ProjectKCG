@@ -14,7 +14,6 @@ $facebook = new Facebook($config);
 	//ログイン済みの場合はユーザー情報を取得
 	if ($facebook->getUser()) {
 		try {
-
 			$userId = $facebook->getUser();
 			$user = $facebook->api('/me','GET');
 		} catch(FacebookApiException $e) {
@@ -32,7 +31,8 @@ $facebook = new Facebook($config);
 		if (isset($user)) {
 			//ログイン済みでユーザー情報が取れていれば表示
 			echo '<pre>';
-			print_r($user);
+			echo　$user;
+			echo　$userId;
 			echo '</pre>';
 		} else {
 			//未ログインならログイン URL を取得してリンクを出力
