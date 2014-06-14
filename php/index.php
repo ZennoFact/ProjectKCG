@@ -1,5 +1,3 @@
-<html>
-<body>
 <?php
 require_once('php-sdk/facebook.php');
 $config = array(
@@ -14,8 +12,8 @@ $facebook = new Facebook($config);
 	//ログイン済みの場合はユーザー情報を取得
 	if ($facebook->getUser()) {
 		try {
-			$userId = $facebook->getUser();
-			$user = $facebook->api('/me','GET');
+			$userId = "<pre>".$facebook->getUser()."</pre>";
+			$user = "<pre>".$facebook->api('/me','GET')."</pre>";
 		} catch(FacebookApiException $e) {
 			error_log($e->getType());
 			error_log($e->getMessage());
