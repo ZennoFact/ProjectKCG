@@ -29,5 +29,6 @@ body{
 }
 
 .inner #login ul li p{
+	color: #00334a;
 	margin: 10px auto;
 }
