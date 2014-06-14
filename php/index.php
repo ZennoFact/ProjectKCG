@@ -1,3 +1,3 @@
 <?php
-	echo "boke";
+	echo("restart");
 ?>
