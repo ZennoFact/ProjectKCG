@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background:#357672;
+}
+
+.inner{
+	background:#ffffff;
+	width: 600px;
+	height: 300px;
+	margin: 10% auto;
+}
+
+.inner #login{
+	height: 100%;
+}
+
+.inner #login ul{
+	height: 100%;
+	list-style-type: none;
+	padding:0;
+	text-align: center;
+}
+
+.inner #login ul li{
+	width: 100%;
+}
+
+.inner #login ul li p{
+	margin: 10px auto;
+}
