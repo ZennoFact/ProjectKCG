@@ -13,13 +13,18 @@ body{
 
 .inner #login{
 	height: 100%;
+	background-image: url(../images/logo_2.gif);
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
 }
 
 .inner #login ul{
 	height: 100%;
 	list-style-type: none;
-	padding:0;
+	padding: 30px 0;
 	text-align: center;
+	
 }
 
 .inner #login ul li{
