@@ -4,10 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/content.css">
     <meta http-equiv="Content-Script-Type" content="text/javascript">
     <title>Bootstrap 101 Template</title>
+    <script type="text/javascript">
+    $(function() { 
+        var nav    = $('#fixedBox'),
+        offset = nav.offset().top;
+        $(window).scroll(function () {
+            var winTop = $(this).scrollTop();
+          if(winTop >= offset){
+            nav.addClass('fixed')
+          }else if(winTop <= offset){
+            nav.removeClass('fixed')
+          }
+        });
+    });
+</script>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,13 +38,13 @@
 
 <!-- ページのコンテンツすべてをwrapする（フッター以外） -->
 <div id="wrap">
-     <header style="background-color: #fff" class="navber navbar-fixed-top">
+     <header style="background-color:#00618D;" class="navber navbar-static-top">
         <div class="navbar-inner">
             <div class="container">
                 <ul class="nav pull-right">  
-                    <li class="active"><a href="#">LOGIN</a></li>
-                    <li class="divider-vertical"></li>
                     <li class="active"><a href="#">LOGOUT</a></li>
+                    <li class="divider-vertical"></li>
+                    <li class="active"><a href="#">SETTINGS</a></li>
                 </ul>
             </div>
             <div class="clear"></div>
@@ -37,19 +52,35 @@
     </header>
 
      <!-- <nav class="navbar navbar-default navbar-fixed-top" role="navigation">ああ</nav> -->
-      <section class="container">
-      <nav  style="background-color: #000;"　class="navbar-default container">nav部分</nav>
+    <section class="container">
+        <nav style="background-color: #fff;"　class="navbar-default navber nav" id="fixedBox">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div >
+                        <ul class="nav pull-right">
+                            <li class="active"><a href="#">TIME</a></li>
+                            <li class="active"><a href="#">ABC</a></li>
+                            <li class="active"><a href="#">UNREAD</a></li>
+                            <li class="active"><a href="#">LISTNAME/ALL</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </nav>
       
-    <div class="row">
-        <script type="text/javascript">
-            for(var i =0; i<24; i++){
-                document.write("<div class='col-xs-6 col-sm-4 col-md-2'><div class='text-center group'>1</div></div>");
-            }
-        </script>      
-    </div>
+        <!-- コンテンツ -->
+        <div class="row">
+            <script type="text/javascript">
+                for(var i =0; i<24; i++){
+                    document.write("<div class='col-xs-6 col-sm-4 col-md-2'><div class='text-center group'>1</div></div>");
+                }
+            </script>      
+        </div>
+        <!-- コンテンツここまで -->
 
         <div id="push"></div>
-      </section>
+    </section>
 
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -58,7 +89,7 @@
         <script src="js/bootstrap.min.js"></script>
 </div>
 
-<footer style="background-color: #000;" class="navbar navbar-default navbar-static-bottom">フッター</footer>
+<footer style="background-color:#00618D;" class="navbar navbar-default navbar-static-bottom">フッター</footer>
 
 </body>
 </html>

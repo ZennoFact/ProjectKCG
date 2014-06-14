@@ -10,8 +10,9 @@ html,body{
 }
 
 nav {
-	padding-top: 90px;
 	list-style: none;
+  min-width: 940px;
+  margin-bottom: 100px;
 }
 
 
@@ -44,18 +45,21 @@ ul li {
 
 .container {
   max-width: none !important;
-  width: 940px;
-}
-
-header{
-	background-color: #fff;
+  width: 970px;
 }
 
 footer{
 	height: 80px;
-    position:absolute;
-    bottom:0;
+  position:absolute;
+  bottom:0;
 }
 
+.fixed {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 10000;
+}
 
 
