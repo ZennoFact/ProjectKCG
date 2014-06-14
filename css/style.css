@@ -99,10 +99,11 @@ footer{
 }
 
 .copyright{
-    text-align:center;
+    text-align:right;
     margin:0.5em auto;
     display:block;
     color: #fff;
+    padding-right:10px;
 }
 
 a.navbar-brand{
