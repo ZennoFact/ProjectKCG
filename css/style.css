@@ -1,0 +1,61 @@
+html,body{
+     height:100%;
+}
+#wrap{
+     width: 100%;
+     position: relative;
+     height:auto !important; /*IE6対策*/
+     height: 100%; /*IE6対策*/
+     min-height: 100%;
+}
+
+nav {
+	padding-top: 90px;
+	list-style: none;
+}
+
+
+ul li {
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-brand {
+  margin-left: -15px;
+}
+
+#contents{
+     padding-bottom:140px; /*フッターの高さと同じ*/
+}
+
+.container {
+  max-width: none !important;
+  width: 940px;
+}
+
+header{
+	background-color: #fff;
+}
+
+footer{
+	height: 80px;
+    position:absolute;
+    bottom:0;
+}
+
+
+
