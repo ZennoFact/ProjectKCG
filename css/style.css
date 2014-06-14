@@ -1,5 +1,6 @@
 html,body{
      height:100%;
+     font-family: 'Helvetica Neue', Helvetica, Arial, Roboto, 'Droid Sans', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ       Pro W3', 'Hiragino Kaku Gothic ProN', sans-serif;
 }
 #wrap{
      width: 100%;
@@ -12,7 +13,7 @@ html,body{
 nav {
 	list-style: none;
   min-width: 940px;
-  margin-bottom: 100px;
+  /*margin-bottom: 100px;*/
 }
 
 
