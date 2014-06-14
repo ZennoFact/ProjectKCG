@@ -1,3 +1,6 @@
+<html>
+<body>
+phpは動いているのか
 <?php
 	require_once("../facebook/facebook.php");
 	$appdata = array(
@@ -11,3 +14,5 @@
 	$loginUrl = $facebook->getLoginUrl();
 	echo '<a href="' . $loginUrl . '">Login with Facebook</a>';
 ?>
+</body>
+<html>
