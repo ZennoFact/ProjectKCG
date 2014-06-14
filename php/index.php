@@ -14,6 +14,8 @@
 	echo '<a href="' . $loginUrl . '">Login with Facebook</a>';
 	$userId = $facebook->getLoginUrl();
 
+	cho $userId;
+
 	$code = $_REQUEST('code');
 	$redirect_uri = 'http://zeglass.cloudapp.net/php/';
 	$token_url = 'https://graph.facebook.com/oauth/access_token'
