@@ -94,19 +94,23 @@
         <!-- コンテンツ -->
         <div class="row">
             <script type="text/javascript">
+            //雰囲気見るためにアイテムを回してみる
                 for(var i =0; i<24; i++){
                     document.write(" <div class='col-xs-6 col-sm-4 col-md-2'><div class='group'><div id='groupname'>京都コンピュータ学院東京ハッカソングループ</div><div id='grouppic'><img src='images/testimage.jpg'></div><div id='nomarks'>1</div></div></div>");
                 }
             </script>
 
-            <!-- アイテムの内容 -->
-<!--             <div class='col-xs-6 col-sm-4 col-md-2'>
+            <!-- アイテムの内容（class="group"は子要素、class="parent"は親要素） -->
+             <div class='col-xs-6 col-sm-4 col-md-2'>
                 <div class='group'>
                     <div id='groupname'>京都コンピュータ学院東京ハッカソングループ</div>
                     <div id='grouppic'><img src="images/testimage.jpg"></div>
                     <div id='nomarks'>1</div>
                 </div>
-            </div>   -->
+                <div class='parent' id="groupNumber">
+                    <div id='parentname'>DMTC</div>
+                </div>
+            </div>   
             <!-- アイテムの内容ここまで -->    
         </div>
         <!-- コンテンツここまで -->
