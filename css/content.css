@@ -56,15 +56,19 @@
 	left:80px;
 	width:30px;
 	height: 30px; 
-	border-radius: 0.2em;
 	z-index: 3;
 	font-size: 22px;
 	color: #fff;
 	text-align: center;
-	background-color:#cd0077;
+	background-color:#E64D4c;
 	text-shadow: 1px 1px 3px #000; 
-	-moz-box-shadow: 0 0 4px #2e2b2c, 0 0 12px #2e2b2c, 2px 2px 2px #2e2b2c;  
-	-webkit-box-shadow: 0 0 4px #2e2b2c, 0 0 12px #2e2b2c, 2px 2px 2px #2e2b2c;  
+	-moz-box-shadow: 0 0 4px #2e2b2c, 0 0 1px #2e2b2c, 1px 1px 1px #2e2b2c;  
+	-webkit-box-shadow: 0 0 4px #2e2b2c, 0 0 1px #2e2b2c, 1px 1px 1px #2e2b2c;  
+
+
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
 }
 
 
