@@ -103,6 +103,8 @@ footer{
 
 footer p{
 	float: right;
+	color: #ffffff;
+	margin: 25px 0 0 0;
 }
 
 .fixed {
