@@ -5,6 +5,10 @@ html,body{
      height:100%;
      font-family: 'Helvetica Neue', Helvetica, Arial, Roboto, 'Droid Sans', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ       Pro W3', 'Hiragino Kaku Gothic ProN', sans-serif;
 }
+
+ul{
+		list-style-type: none;
+}
 #wrap{
      width: 100%;
      position: relative;
@@ -15,10 +19,6 @@ html,body{
 
 #service_name{
   font-size: 15px;
-}
-
-input.search-query{
-  margin:10px;
 }
 
 nav {
@@ -33,11 +33,7 @@ ul li {
 
 #logo{
   float:left;
-  margin-top:8px;
-}
-
-#logomark{
-  margin-right:5px;
+  margin:8px 0;
 }
 
 #logozone{
@@ -54,17 +50,27 @@ ul li {
   overflow: visible !important;
 }
 
-.navbar-toggle {
-  display: none;
-}
-
 .navbar-brand {
   margin-left: -15px;
+}
+.nav_pull-right{
+	margin: 20px 0;
+}
+
+.nav_pull-right li{
+		margin: 0 5px 0 5px;
 }
 
 a.dropdown-toggle{
   color:white;
+  vertical-align: middle;
 }
+
+a.dropdown-toggle:hover{
+  color: #ffffff;
+  text-decoration: none;
+}
+
 
 #contents{
      padding-bottom:80px; /*フッターの高さと同じ*/
