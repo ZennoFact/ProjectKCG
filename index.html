@@ -27,7 +27,17 @@
 
 <script type="text/javascript">
 //アイコンタイプのソーシャルボタン
-
+$(function(){
+		$('#twitter_icon').socialbutton('twitter',{
+			button: 'name',
+			text: 'ツイートする',
+			via: 'twitter'
+		});
+		$('#facebook_share_icon').socialbutton('facebook',{
+			button: 'button',
+			text: 'シェア'
+		});
+});
 	
 
 </script>
@@ -138,9 +148,9 @@
 </div>
 
 <footer style="background-color:#00618D;" class="navbar navbar-default navbar-static-bottom">
-    <span class="copyright"><small>&copy; copyright 2014 Facebook Group Special</small></span>
-    <div id="facebook_icon"></div>
-    <div id="twitter_icon"></div>
+    <p>&copy; copyright 2014 Facebook Group Special</p>
+    <p><img src="images/twitter_icon.gif" alt="twitter_icon" width="40" height="40"></p>
+     <p id="facebook_share_icon"><img src="images/fb_icon.gif" alt="facebook_icon" width="40" height="40"></p>
 </footer>
 
 </body>

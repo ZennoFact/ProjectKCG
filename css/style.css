@@ -95,6 +95,10 @@ footer{
   bottom:0;
 }
 
+footer p{
+	float: right;
+}
+
 .fixed {
     position: fixed;
     top: 0;
@@ -148,3 +152,10 @@ a:hover.navbar-brand{
 .ie{
    behavior: url(border-radius.htc);/* 角丸forIE */
 }
+
+
+
+#facebook_share_icon{
+}
+
+#witter_icon{}
