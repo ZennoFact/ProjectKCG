@@ -21,22 +21,28 @@ input.search-query{
   margin:10px;
 }
 
-
 nav {
 	list-style: none;
   min-width: 940px;
   /*margin-bottom: 100px;*/
 }
 
-
 ul li {
 	float: right;
 }
 
 #logo{
-
+  float:left;
+  margin-top:8px;
 }
 
+#logomark{
+  margin-right:5px;
+}
+
+#logozone{
+  width:30px;
+}
 .clear{
 	clear: both;
 }
@@ -83,7 +89,7 @@ span#timeorder{
 }
 
 footer{
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 	height: 80px;
   position:absolute;
   bottom:0;
@@ -137,4 +143,8 @@ a:hover.navbar-brand{
   color: #fff !important;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.00);
   -webkit-font-smoothing: antialiased;
+}
+
+.ie{
+   behavior: url(border-radius.htc);/* 角丸forIE */
 }
