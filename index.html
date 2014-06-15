@@ -41,7 +41,9 @@
      <header style="background-color:#00618D;" class="navber navbar-static-top">
         <div class="navbar-inner">
             <div class="container">
-                <a class="navbar-brand" href="#">Facebook Group管理ツール</a>
+                <div id="logo">
+                    <a class="navbar-brand" href="#"><img src="images/logo_2.gif" width="36px">   Group Facebook</a>
+                </div>
                 <ul class="nav pull-right">  
                     <li class="active dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -66,10 +68,9 @@
         <div id="nav">
             <nav style="background-color: #fff;"　class="navbar-default navber nav" id="fixedBox">
                 <div class="navbar-inner">
-                    <div class="container">
                         <a class="navbar-brand" href="#">
                         <span id="newGroup">
-                            <button type="button" class="btn btn-custom">新しいグループを作成する</button>
+                            <button type="button" class="btn btn-custom">新しい親要素を作成する</button>
                         </span>
                         </a>
                         <div >
@@ -85,7 +86,6 @@
                                 <li class="active"><a href="#"><span id="timeorder">最新更新日時</a></li>
                             </ul>
                         </div>
-                    </div>
                     <div class="clear"></div>
                 </div>
             </nav>
@@ -94,19 +94,23 @@
         <!-- コンテンツ -->
         <div class="row">
             <script type="text/javascript">
+            //雰囲気見るためにアイテムを回してみる
                 for(var i =0; i<24; i++){
                     document.write(" <div class='col-xs-6 col-sm-4 col-md-2'><div class='group'><div id='groupname'>京都コンピュータ学院東京ハッカソングループ</div><div id='grouppic'><img src='images/testimage.jpg'></div><div id='nomarks'>1</div></div></div>");
                 }
             </script>
 
-            <!-- アイテムの内容 -->
-<!--             <div class='col-xs-6 col-sm-4 col-md-2'>
+            <!-- アイテムの内容（class="group"は子要素、class="parent"は親要素） -->
+             <div class='col-xs-6 col-sm-4 col-md-2'>
                 <div class='group'>
                     <div id='groupname'>京都コンピュータ学院東京ハッカソングループ</div>
                     <div id='grouppic'><img src="images/testimage.jpg"></div>
                     <div id='nomarks'>1</div>
                 </div>
-            </div>   -->
+                <div class='parent' id="groupNumber">
+                    <div id='parentname'>DMTC</div>
+                </div>
+            </div>   
             <!-- アイテムの内容ここまで -->    
         </div>
         <!-- コンテンツここまで -->
