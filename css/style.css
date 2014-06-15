@@ -162,8 +162,6 @@ a:hover.navbar-brand{
 }
 
 
-
-#facebook_share_icon{
+.inner{
+	margin: 0 100px 0 0;
 }
-
-#witter_icon{}
